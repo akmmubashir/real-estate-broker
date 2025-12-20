@@ -43,7 +43,7 @@ const WhoWeAre = () => {
             </div>
             <div className="col-span-6 max-lg:col-span-full grid grid-cols-12 gap-7.5 max-lg:gap-5">
                 {contentData.map(item => (
-                    <div key={item.id} className="col-span-6 min-h-65 max-lg:min-h-50 bg-[#f6f6f6] rounded-[20px] p-5 flex flex-col gap-2 shadow-lg">
+                    <div key={item.id} className="col-span-6 min-h-65 max-lg:min-h-50 bg-[#f6f6f6] rounded-[20px] max-lg:rounded-xl p-5 flex flex-col gap-2 shadow-lg">
                         <h4 className='text-black font-semibold text-[16px] max-lg:text-[14px] uppercase pb-2.5 border-b border-[#D9BAA0] mb-auto'>{item.text}</h4>
                         <div className='flex flex-col mt-auto gap-1'>
                             <p className="text-black text-[24px] max-lg:text-[20px] font-medium">{item.result}</p>
