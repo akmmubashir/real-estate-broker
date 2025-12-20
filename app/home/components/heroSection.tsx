@@ -30,7 +30,7 @@ const HeroSection = () => {
             />
             {/* Gradient overlay below content */}
             <div className="absolute inset-0 z-10 bg-linear-to-b from-black/90 via-black/0 to-transparent pointer-events-none" />
-            <div className='relative z-20 h-dvh max-lg:gap-[40px_0] p-[160px_0px_60px] max-xl:p-[140px_40px_60px] max-lg:p-[120px_20px_40px] max-w-300 mx-auto flex flex-col justify-between'>
+            <div className='relative z-20 h-dvh max-lg:gap-[40px_0] p-[160px_0px_60px] max-xl:p-[140px_40px_60px] max-lg:p-[100px_20px_40px] max-w-300 mx-auto flex flex-col justify-between'>
                 <div className='relative max-lg:flex flex-col gap-6'>
                     <h2 className='text-white text-[30px]  max-lg:text-[20px] lg:absolute left-3 top-55'>Luxury <br className='max-lg:hidden' /> Real-Estate</h2>
                     <h1 className={`text-[160px] leading-40 max-lg:text-[46px] max-lg:leading-12.5 font-semibold text-white w-full flex flex-col justify-between items-stretch ${robotoMono.className}`}><span>Luxury</span>
