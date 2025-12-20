@@ -3,15 +3,17 @@ import Header from '../components/header'
 import HeroSection from './components/heroSection'
 import Footer from '../components/footer'
 import WhoWeAre from './components/whoWeAre'
+import ProjectList from './components/projectList'
 
 // type Props = {}
 
 const HomePage = () => {
     return (
-      <div className='min-h-screen overflow-hidden bg-white'>
+        <div className='min-h-screen overflow-hidden bg-white'>
             <Header />
-            <HeroSection /> 
-            <WhoWeAre /> 
+            <HeroSection />
+            <WhoWeAre />
+            <ProjectList />
             <Footer />
         </div>
     )
