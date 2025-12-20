@@ -36,7 +36,7 @@ const HeroSection = () => {
                     <h1 className={`text-[160px] leading-40 max-lg:text-[46px] max-lg:leading-12.5 font-semibold text-white w-full flex flex-col justify-between items-stretch ${robotoMono.className}`}><span>Luxury</span>
                         <span className='lg:ms-auto'> Perfected</span></h1>
 
-                    <p className='lg:absolute top-12 right-3 lg:w-1/3 lg:font-medium text-[18px] max-lg:text-[16px] lg:text-end'> Discover exceptional residences where elegance meets everyday comfort.
+                    <p className='lg:absolute top-12 right-3 lg:w-1/3 lg:font-medium text-white text-[18px] max-lg:text-[16px] lg:text-end'> Discover exceptional residences where elegance meets everyday comfort.
                         Thoughtfully selected homes for elevated lifestyles.</p>
                     <div className='w-full flex lg:justify-center lg:mt-10 gap-2.5'>
                         <button className='cursor-pointer uppercase text-[16px] max-md:text-[14px] p-[12px_20px] max-md:p-[8px_12px] rounded-lg bg-[#d9baa0] border border-[#d9baa0] hover:border-white hover:bg-white text-[#160A0A] hover:scale-95 transition-all duration-300 font-medium shadow-2xl'>Enquire</button>
