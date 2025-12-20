@@ -30,11 +30,11 @@ const WhoWeAre = () => {
                     <div className='absolute w-7.5 h-7.5 right-50 top-0 bg-white rotate-180' style={{ clipPath: 'path("M0 0 Q0,30 30,30 L 0 30 Z")' }}></div>
                     <div className='absolute w-7.5 h-7.5 right-0 top-12.5 bg-white rotate-180' style={{ clipPath: 'path("M0 0 Q0,30 30,30 L 0 30 Z")' }}></div>
 
-                    <div className='max-h-175 max-lg:max-h-125 overflow-hidden rounded-[30px] '>
+                    <div className='max-h-195 max-lg:max-h-125 overflow-hidden rounded-[30px]'>
                         <Image
                             src={"/assets/common/aboutSideImg.png"}
                             alt='About DAMAC Properties'
-                            width={1000}
+                            width={2000}
                             height={1000}
                         />
                     </div>
@@ -43,7 +43,7 @@ const WhoWeAre = () => {
             </div>
             <div className="col-span-6 max-lg:col-span-full grid grid-cols-12 gap-7.5 max-lg:gap-5">
                 {contentData.map(item => (
-                    <div key={item.id} className="col-span-6 min-h-65 max-lg:min-h-50 bg-[#f6f6f6] rounded-[20px] max-lg:rounded-xl p-5 flex flex-col gap-2 shadow-lg">
+                    <div key={item.id} className="col-span-6 min-h-55 max-lg:min-h-50 bg-[#f6f6f6] rounded-[20px] max-lg:rounded-xl p-5 flex flex-col gap-2 shadow-lg">
                         <h4 className='text-black font-semibold text-[16px] max-lg:text-[14px] uppercase pb-2.5 border-b border-[#D9BAA0] mb-auto'>{item.text}</h4>
                         <div className='flex flex-col mt-auto gap-1'>
                             <p className="text-black text-[24px] max-lg:text-[20px] font-medium">{item.result}</p>
@@ -51,6 +51,13 @@ const WhoWeAre = () => {
                         </div>
                     </div>
                 ))}
+                <div className='col-span-full rounded-[20px] max-lg:rounded-xl overflow-hidden shadow-lg'>
+                    <Image
+                        src={"/assets/common/aboutPanorama.png"}
+                        alt='About DAMAC Properties image'
+                        width={1000}
+                        height={800} />
+                </div>
             </div>
 
         </div>
