@@ -8,7 +8,7 @@ import WhoWeAre from './components/whoWeAre'
 
 const HomePage = () => {
     return (
-      <div className='bg-[#111111] min-h-screen overflow-hidden text-white'>
+      <div className='min-h-screen overflow-hidden bg-white'>
             <Header />
             <HeroSection /> 
             <WhoWeAre /> 
