@@ -7,7 +7,6 @@ const montserrat = Montserrat({
   subsets: ["latin"],
 });
 
-
 export const metadata: Metadata = {
   title: "Real Estate Broker",
   description: "Luxury Real Estate Broker - Discover Your Dream Home with Us",
