@@ -4,6 +4,7 @@ import HeroSection from './components/heroSection'
 import Footer from '../components/footer'
 import WhoWeAre from './components/whoWeAre'
 import ProjectList from './components/projectList'
+import WhyInvest from './components/whyInvest'
 
 // type Props = {}
 
@@ -14,6 +15,7 @@ const HomePage = () => {
             <HeroSection />
             <WhoWeAre />
             <ProjectList />
+            <WhyInvest />
             <Footer />
         </div>
     )

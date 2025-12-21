@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const ProjectList = () => {
@@ -162,14 +163,20 @@ const ProjectList = () => {
                     <p className='text-[26px] max-lg:text-[20px] font-medium text-white'>{project.price}</p>
 
                   </div>
-                  <button className='cursor-pointer font-medium uppercase whitespace-nowrap text-[16px] max-md:text-[14px] p-[10px_14px] max-md:p-[8px_12px] rounded-lg bg-white hover:bg-white/90 border text-[#160A0A] hover:scale-95 transition-all duration-300 shadow-2xl'>Details</button>
+                  <Link href={project.link} className='cursor-pointer font-medium uppercase whitespace-nowrap text-[16px] max-md:text-[14px] p-[10px_14px] max-md:p-[8px_12px] rounded-lg bg-white hover:bg-white/90 border text-[#160A0A] hover:scale-95 transition-all duration-300 shadow-2xl'>Details</Link>
                 </div>
               </div>
             </div>
           ))}
         </div>
+        <div className="col-span-full flex flex-col items-center gap-4">
+          <p className='text-[#3a3a3a] text-[16px] max-lg:text-[14px] text-justify italic'>*Terms and conditions apply. Prices and availability are subject to change without prior notice. Please contact our sales team for the most up-to-date information.</p>
+          <div>
+            <button className='cursor-pointer uppercase text-[16px] max-md:text-[14px] p-[12px_20px] max-md:p-[8px_12px] rounded-lg bg-[#d9baa0] border border-[#d9baa0] text-[#160A0A] hover:bg-[#d9baa0]/20 hover:border hover:border-[#d9baa0] hover:scale-95 transition-all duration-300 font-medium shadow-2xl'>view more</button>
+          </div>
+        </div>
       </div>
-    </div >
+    </div>
   )
 }
 

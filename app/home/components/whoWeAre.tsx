@@ -51,7 +51,7 @@ const WhoWeAre = () => {
                         </div>
                     </div>
                 ))}
-                <div className='col-span-full rounded-[20px] max-lg:rounded-xl overflow-hidden shadow-lg'>
+                <div id='projects' className='col-span-full rounded-[20px] max-lg:rounded-xl overflow-hidden shadow-lg'>
                     <Image
                         src={"/assets/common/aboutPanorama.png"}
                         alt='About DAMAC Properties image'
