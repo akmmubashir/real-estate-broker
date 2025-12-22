@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
+import Image from 'next/image'
+// import Link from 'next/link'
 
 const ProjectList = () => {
   const projectListData = [
@@ -113,7 +113,7 @@ const ProjectList = () => {
             DAMAC Properties is widely recognized for developing luxury residential towers, premium master-planned communities, and exclusive island resort residences. From refined apartments in Dubai to contemporary urban retreats, each development combines forward-thinking design with world-class amenities to create an elevated living experience.
           </p>
         </div>
-        <div className='col-span-full grid grid-cols-12 mt-5 max-lg:gap-[20px_0]' >
+        <div className='col-span-full grid grid-cols-12 mt-5 gap-7.5 max-lg:gap-[20px_0]' >
           {projectListData.map(project => (
             <div key={project.id} className="col-span-6 max-lg:col-span-full h-100 overflow-hidden relative bg-no-repeat bg-cover bg-center"
               style={{
@@ -121,11 +121,31 @@ const ProjectList = () => {
                 // filter: 'grayscale(40%)',
               }}
             >
+              {/* start of absolute content */}
+              <div className='z-20 absolute w-33 h-15 right-0 bottom-0 bg-[#f6f3ec] rounded-[30px_0px_0px_0px]'></div>
+              <div className='z-20 absolute w-7.5 h-7.5 right-33 bottom-0 bg-[#f6f3ec] -rotate-90' style={{ clipPath: 'path("M0 0 Q0,30 30,30 L 0 30 Z")' }}></div>
+              <div className='z-20 absolute w-7.5 h-7.5 right-0 bottom-15 bg-[#f6f3ec] -rotate-90' style={{ clipPath: 'path("M0 0 Q0,30 30,30 L 0 30 Z")' }}></div>
+              {/* enquire button */}
+              <div className='z-30 absolute right-0 bottom-0'>
+                <button className='cursor-pointer uppercase text-[16px] p-[12px_20px] rounded-[20px_10px_0px_10px] bg-[#d9baa0] border border-[#d9baa0] text-[#160A0A] hover:bg-[#d9baa0]/20 hover:border hover:border-[#d9baa0] hover:scale-95 transition-all duration-300 font-medium shadow-2xl'>Enquire</button>
+              </div>
+              {/* status badge */}
               <div className='absolute left-7.5 top-7.5 max-lg:left-5 max-lg:top-5 bg-black rounded-full p-[8px_12px] shadow-2xl flex flex-col items-center justify-center'>
                 <p className='text-white font-medium text-[14px]'>{project.status}</p>
               </div>
-              <div className='absolute bottom-0 left-0 p-[100px_30px_30px] max-lg:p-[80px_20px_20px] w-full grid grid-cols-12 items-end gap-5 max-lg:gap-3 bg-linear-to-t from-black/85 via-black/60 to-transparent text-white'>
-                <div className='col-span-8 max-lg:col-span-full flex flex-col gap-2.5 max-lg:gap-1.5'>
+
+              <div className='z-20 absolute right-5 bottom-20 flex gap-1 items-center mb-auto'>
+                <div className='w-7.5 h-7.5 max-lg:w-5.5 max-lg:h-5.5'>
+                  <Image src={"/assets/icons/dirham.svg"} alt="dirham-icon" width={100} height={100} />
+                </div>
+                <p className='text-[24px] max-lg:text-[20px] font-medium text-white'>{project.price}</p>
+
+              </div>
+              {/* end of absolute content */}
+
+              {/* content section start */}
+              <div className='absolute bottom-0 left-0 p-[100px_20px_20px] max-lg:p-[80px_20px_20px] w-full items-start gap-5 max-lg:gap-3 bg-linear-to-t from-black/85 via-black/60 to-transparent text-white'>
+                <div className='w-2/3 flex flex-col gap-2.5 max-lg:gap-1.5'>
                   <div className='flex gap-1 items-center'>
                     <div className=''>
                       <Image src={"/assets/icons/location.svg"} alt="location-icon" width={20} height={20} />
@@ -155,17 +175,8 @@ const ProjectList = () => {
                     </div>
                   </div>
                 </div>
-                <div className='col-span-4 max-lg:col-span-full flex lg:flex-col max-lg:justify-between lg:items-end max-lg: items-end gap-2.5'>
-                  <div className='flex gap-1 items-center'>
-                    <div className='w-7.5 h-7.5 max-lg:w-5.5 max-lg:h-5.5'>
-                      <Image src={"/assets/icons/dirham.svg"} alt="dirham-icon" width={100} height={100} />
-                    </div>
-                    <p className='text-[26px] max-lg:text-[20px] font-medium text-white'>{project.price}</p>
-
-                  </div>
-                  <Link href={project.link} className='cursor-pointer font-medium uppercase whitespace-nowrap text-[16px] max-md:text-[14px] p-[10px_14px] max-md:p-[8px_12px] rounded-lg bg-white hover:bg-white/90 border text-[#160A0A] hover:scale-95 transition-all duration-300 shadow-2xl'>Details</Link>
-                </div>
               </div>
+              {/* content section start */}
             </div>
           ))}
         </div>
