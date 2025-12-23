@@ -1,8 +1,10 @@
 "use client";
 import React from 'react'
 import { motion } from 'framer-motion'
+import { useEnquiryModal } from '@/app/components/enquiryContext';
 
 const WhyInvestDubai = () => {
+    const { openModal } = useEnquiryModal()
     const investReasons = [
         {
             id: 1,
@@ -195,6 +197,7 @@ const WhyInvestDubai = () => {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         className='cursor-pointer uppercase text-[16px] max-md:text-[14px] p-[12px_28px] rounded-lg bg-[#d9baa0] border border-[#d9baa0] text-[#160A0A] hover:bg-white hover:border-[#d9baa0] transition-all duration-300 font-semibold shadow-2xl'
+                        onClick={openModal}
                     >
                         Get Started
                     </motion.button>

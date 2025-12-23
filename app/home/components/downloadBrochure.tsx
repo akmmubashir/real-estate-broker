@@ -3,8 +3,10 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { useEnquiryModal } from '@/app/components/enquiryContext'
 
 const DownloadBrochure = () => {
+     const { openModal } = useEnquiryModal()
     return (
         <section className='relative w-full overflow-hidden'>
             {/* Background Image */}
@@ -103,6 +105,7 @@ const DownloadBrochure = () => {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             transition={{ type: 'spring', stiffness: 400 }}
+                            onClick={openModal}
                         >
                             <div className='flex items-center gap-3'>
                                 <svg 

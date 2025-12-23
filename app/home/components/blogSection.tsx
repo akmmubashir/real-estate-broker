@@ -240,7 +240,7 @@ const BlogSection = () => {
                         onClick={closeBlog}
                     >
                         <motion.div
-                            className='relative bg-white overflow-hidden max-w-4xl w-full max-h-[90vh] overflow-y-auto'
+                            className='relative bg-white overflow-hidden max-w-4xl w-full max-h-[90vh] overflow-y-auto max-lg:rounded-[20px]'
                             initial={{ scale: 0.9, opacity: 0, y: 50 }}
                             animate={{ scale: 1, opacity: 1, y: 0 }}
                             exit={{ scale: 0.9, opacity: 0, y: 50 }}

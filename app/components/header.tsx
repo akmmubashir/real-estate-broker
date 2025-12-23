@@ -2,11 +2,13 @@
 import React, { useEffect, useState } from 'react' 
 import Logo from './logo';
 import Navigation from './navigation';
+import { useEnquiryModal } from './enquiryContext';
 // import Navigation from './navigation'
 
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
+    const { openModal } = useEnquiryModal();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -23,6 +25,7 @@ const Header = () => {
                 <Navigation type={scrolled ? 'scroll' : 'transparent'} />
                 <button
                     className='cursor-pointer uppercase text-[16px] max-md:text-[14px] p-[10px_20px] max-md:p-[8px_12px] rounded-lg bg-[#d9baa0] hover:bg-white text-[#160A0A] hover:scale-95 transition-all duration-300 font-medium shadow-2xl'
+                    onClick={openModal}
                 >
                     Enquire
                 </button>

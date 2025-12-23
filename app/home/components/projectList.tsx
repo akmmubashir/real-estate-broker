@@ -2,9 +2,11 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import { useEnquiryModal } from '../../components/enquiryContext'
 // import Link from 'next/link'
 
 const ProjectList = () => {
+  const { openModal } = useEnquiryModal()
   const projectListData = [
     {
       id: 1,
@@ -142,7 +144,7 @@ const ProjectList = () => {
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
               whileHover={{ y: -8, scale: 1.02 }}
-              className="col-span-6 max-lg:col-span-full h-100 overflow-hidden relative bg-no-repeat bg-cover bg-center"
+              className="col-span-6 outline-none! max-lg:col-span-full h-100 overflow-hidden relative bg-no-repeat bg-cover bg-center"
               style={{
                 backgroundImage: `url(${project.imageUrl})`,
                 // filter: 'grayscale(40%)',
@@ -158,6 +160,7 @@ const ProjectList = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className='cursor-pointer uppercase text-[16px] p-[12px_20px] rounded-[20px_10px_0px_10px] bg-[#d9baa0] border border-[#d9baa0] text-[#160A0A] hover:bg-[#d9baa0]/20 hover:border hover:border-[#d9baa0] transition-colors duration-300 font-medium shadow-2xl'
+                  onClick={openModal}
                 >
                   Enquire
                 </motion.button>
@@ -237,6 +240,7 @@ const ProjectList = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className='cursor-pointer uppercase text-[16px] max-md:text-[14px] p-[12px_20px] max-md:p-[8px_12px] rounded-lg bg-[#d9baa0] border border-[#d9baa0] text-[#160A0A] hover:bg-[#d9baa0]/20 hover:border hover:border-[#d9baa0] transition-colors duration-300 font-medium shadow-2xl'
+              onClick={openModal}
             >
               view more
             </motion.button>

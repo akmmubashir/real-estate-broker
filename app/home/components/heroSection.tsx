@@ -2,6 +2,7 @@
 import { Roboto_Mono, Smooch_Sans } from 'next/font/google';
 import React from 'react'
 import { motion } from 'framer-motion'
+import { useEnquiryModal } from '../../components/enquiryContext'
 
 const smoochSans = Smooch_Sans({
     variable: "--font-smooch-sans",
@@ -14,6 +15,7 @@ const robotoMono = Roboto_Mono({
 // type Props = {}
 
 const HeroSection = () => {
+    const { openModal } = useEnquiryModal()
     const data = [
         { id: 1, count: "180+", title: "Residences Delivered" },
         { id: 2, count: "30+", title: "Industry Awards" },
@@ -79,6 +81,7 @@ const HeroSection = () => {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             className='cursor-pointer uppercase text-[16px] max-md:text-[14px] p-[12px_20px] max-md:p-[8px_12px] rounded-lg bg-[#d9baa0] border border-[#d9baa0] hover:border-white hover:bg-white text-[#160A0A] transition-colors duration-300 font-medium shadow-2xl'
+                            onClick={openModal}
                         >
                             Enquire
                         </motion.button>
