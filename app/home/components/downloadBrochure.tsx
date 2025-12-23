@@ -53,7 +53,7 @@ const DownloadBrochure = () => {
                         </motion.h2>
                         
                         <motion.p 
-                            className='text-[18px] max-2xl:text-[16px] max-lg:text-[14px] text-gray-300 max-w-xl mb-6 lg:mb-0'
+                            className='text-[18px] max-2xl:text-[16px] max-lg:text-[14px] text-gray-300 max-lg:text-white max-w-xl mb-6 lg:mb-0'
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -147,7 +147,7 @@ const DownloadBrochure = () => {
                             transition={{ duration: 0.5, delay: 0.7 + (index * 0.1) }}
                         >
                             <div className='text-3xl font-bold text-[#d9baa0] mb-1'>{stat.value}</div>
-                            <div className='text-sm text-white'>{stat.label}</div>
+                            <div className='text-[18px] max-2xl:text-[16px] max-lg:text-[14px] text-white'>{stat.label}</div>
                         </motion.div>
                     ))}
                 </motion.div>
