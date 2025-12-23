@@ -7,6 +7,7 @@ import ProjectList from './components/projectList'
 import WhyInvest from './components/whyInvest'
 import Gallery from './components/gallery'
 import PropertiesExpertise from './components/propertiesExpertise'
+import WhyInvestDubai from './components/whyInvestDubai'
 
 // type Props = {}
 
@@ -16,10 +17,11 @@ const HomePage = () => {
             <Header />
             <HeroSection />
             <WhoWeAre />
+            <PropertiesExpertise />
             <ProjectList />
             <WhyInvest />
-            <PropertiesExpertise />
             <Gallery />
+            <WhyInvestDubai />
             <Footer />
         </div>
     )

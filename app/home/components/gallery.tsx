@@ -70,7 +70,7 @@ const Gallery = () => {
   }
 
   return (
-    <div className='bg-white'>
+    <div className='bg-[#f6f3ec]'>
       <div className='p-[80px_0px_80px] max-xl:p-[60px_40px_60px] max-lg:p-[40px_20px_40px] max-w-300 mx-auto'>
         {/* Header Section */}
         <div className='flex flex-col gap-6 mb-12'>
