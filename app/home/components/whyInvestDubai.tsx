@@ -161,7 +161,7 @@ const WhyInvestDubai = () => {
                             <motion.div
                                 whileHover={{ scale: 1.2, rotate: 10 }}
                                 transition={{ type: 'spring', stiffness: 300 }}
-                                className='bg-linear-to-br from-[#d9baa0] to-[#c9a080] text-[#ffffff] p-4 rounded-full w-fit mb-5'
+                                className='bg-linear-to-br from-[#887362] to-[#c9a080] text-[#ffffff] p-4 rounded-full w-fit mb-5'
                             >
                                 {reason.icon}
                             </motion.div>
