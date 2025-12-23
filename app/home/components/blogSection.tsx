@@ -258,14 +258,14 @@ const BlogSection = () => {
                             </button>
 
                             {/* Blog Content */}
-                            <div className='p-8'>
+                            <div className='p-8 max-lg:p-5'>
                                 {/* Featured Image */}
-                                <div className='relative h-80 rounded-xl overflow-hidden mb-8'>
+                                <div className='relative h-80 w-full rounded-xl overflow-hidden mb-8 max-lg:mb-4'>
                                     <Image
                                         src={selectedBlog.image}
                                         alt={selectedBlog.title}
                                         fill
-                                        className='object-cover'
+                                        className='w-full object-cover'
                                     />
                                     <div className='absolute bottom-4 left-4'>
                                         <span className='px-4 py-2 bg-[#d9baa0] text-[#160A0A] text-sm font-semibold rounded-full'>
@@ -275,7 +275,7 @@ const BlogSection = () => {
                                 </div>
 
                                 {/* Meta Info */}
-                                <div className='flex flex-wrap items-center gap-6 text-sm text-gray-500 mb-6'>
+                                <div className='flex flex-wrap items-center gap-6 max-lg:gap-4 text-sm text-gray-500 mb-6'>
                                     <div className='flex items-center gap-2'>
                                         <div className='w-10 h-10 rounded-full bg-[#d9baa0]/20 flex items-center justify-center'>
                                             <span className='text-[#160A0A] font-semibold'>
