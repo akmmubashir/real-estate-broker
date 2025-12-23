@@ -5,6 +5,7 @@ import Footer from '../components/footer'
 import WhoWeAre from './components/whoWeAre'
 import ProjectList from './components/projectList'
 import WhyInvest from './components/whyInvest'
+import Gallery from './components/gallery'
 
 // type Props = {}
 
@@ -16,6 +17,7 @@ const HomePage = () => {
             <WhoWeAre />
             <ProjectList />
             <WhyInvest />
+            <Gallery />
             <Footer />
         </div>
     )
