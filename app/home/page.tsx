@@ -6,6 +6,7 @@ import WhoWeAre from './components/whoWeAre'
 import ProjectList from './components/projectList'
 import WhyInvest from './components/whyInvest'
 import Gallery from './components/gallery'
+import PropertiesExpertise from './components/propertiesExpertise'
 
 // type Props = {}
 
@@ -17,6 +18,7 @@ const HomePage = () => {
             <WhoWeAre />
             <ProjectList />
             <WhyInvest />
+            <PropertiesExpertise />
             <Gallery />
             <Footer />
         </div>
