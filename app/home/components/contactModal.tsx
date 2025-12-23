@@ -100,6 +100,7 @@ const ContactModal = () => {
                                         <option value='violet-4'>DAMAC Violet 4</option>
                                         <option value='lagoon-views'>DAMAC Lagoon Views</option>
                                         <option value='natura'>Natura</option>
+                                        <option value='others'>Others</option>
                                     </select>
                                 </div>
                             </div>
