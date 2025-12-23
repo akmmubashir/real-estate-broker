@@ -41,7 +41,7 @@ const ContactModal = () => {
                     onClick={closeModal}
                 >
                     <motion.div
-                        className='relative w-full max-w-3xl max-lg:h-[calc(100vh-4rem)] bg-white rounded-2xl shadow-2xl overflow-auto'
+                        className='relative w-full max-w-3xl max-lg:h-[calc(100vh-8rem)] bg-white rounded-2xl shadow-2xl overflow-auto'
                         initial={{ scale: 0.95, y: 30, opacity: 0 }}
                         animate={{ scale: 1, y: 0, opacity: 1 }}
                         exit={{ scale: 0.95, y: 30, opacity: 0 }}
