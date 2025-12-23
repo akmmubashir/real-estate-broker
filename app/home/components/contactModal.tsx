@@ -41,7 +41,7 @@ const ContactModal = () => {
                     onClick={closeModal}
                 >
                     <motion.div
-                        className='relative w-full max-w-3xl bg-white rounded-2xl shadow-2xl overflow-hidden'
+                        className='relative w-full max-w-3xl max-lg:h-[calc(100vh-4rem)] bg-white rounded-2xl shadow-2xl overflow-auto'
                         initial={{ scale: 0.95, y: 30, opacity: 0 }}
                         animate={{ scale: 1, y: 0, opacity: 1 }}
                         exit={{ scale: 0.95, y: 30, opacity: 0 }}
@@ -49,7 +49,7 @@ const ContactModal = () => {
                         onClick={(e) => e.stopPropagation()}
                     >
                         {/* Header */}
-                        <div className='flex flex-col md:flex-row items-start md:items-start justify-between gap-4 px-6 py-5  border-b border-[#d9baa0]/40'>
+                        <div className='flex flex-col max-lg:flex-col-reverse md:flex-row items-start md:items-start justify-between gap-4 px-6 py-5 border-b border-[#d9baa0]/40 relative'>
                             <div>
                                 <p className='text-[18px] max-2xl:text-[16px] max-lg:text-[14px] font-semibold tracking-[0.2em] text-[#a58261] mb-1'>GET A CALL BACK</p>
                                 <h3 className='text-[26px] max-lg:text-[20px] font-semibold text-[#160A0A]'>Speak With Our Property Advisor</h3>
