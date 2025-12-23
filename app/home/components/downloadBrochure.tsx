@@ -37,13 +37,13 @@ const DownloadBrochure = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: 0.2 }}
                         >
-                            <span className='inline-block px-4 py-1.5 bg-[#d9baa0]/20 border border-[#d9baa0]/40 rounded-full text-[#d9baa0] text-sm font-medium mb-4'>
+                            <h3 className='uppercase inline-block px-4 py-1.5 bg-[#d9baa0]/20 border border-[#d9baa0]/40 rounded-full text-[#d9baa0] text-[16px] max-lg:text-[14px] font-medium mb-4'>
                                 EXCLUSIVE OFFER
-                            </span>
+                            </h3>
                         </motion.div>
                         
                         <motion.h2 
-                            className='text-4xl lg:text-5xl font-bold mb-4'
+                            className='text-[48px] max-lg:text-[24px] font-bold mb-4'
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -53,7 +53,7 @@ const DownloadBrochure = () => {
                         </motion.h2>
                         
                         <motion.p 
-                            className='text-lg text-gray-300 max-w-xl mb-6 lg:mb-0'
+                            className='text-[18px] max-2xl:text-[16px] max-lg:text-[14px] text-gray-300 max-w-xl mb-6 lg:mb-0'
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}

@@ -20,7 +20,7 @@ const WhoWeAre = () => {
                 className="col-span-4 max-lg:col-span-full h-full"
             >
                 <div className='border-2 border-[#D9BAA0] items-center p-[10px_20px] max-lg:p-[8px_16px] max-w-max flex justify-center rounded-full cursor-default'>
-                    <h3 className='whitespace-nowrap text-[#3a3a3a] text-[16px] max-lg:text-[14px] font-semibold'>Who We Are</h3>
+                    <h3 className='uppercase whitespace-nowrap text-[#3a3a3a] text-[16px] max-lg:text-[14px] font-semibold'>Who We Are</h3>
                 </div>
             </motion.div>
             <motion.div

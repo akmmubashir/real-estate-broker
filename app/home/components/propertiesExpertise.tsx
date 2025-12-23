@@ -1,6 +1,7 @@
 "use client";
 import React from 'react'
 import { motion } from 'framer-motion'
+import Image from 'next/image';
 
 const PropertiesExpertise = () => {
     const expertisePoints = [
@@ -58,7 +59,7 @@ const PropertiesExpertise = () => {
                         transition={{ duration: 0.4 }}
                         className='border-2 border-[#D9BAA0] items-center p-[10px_20px] max-lg:p-[8px_16px] max-w-max flex justify-center rounded-full cursor-default'
                     >
-                        <h3 className='whitespace-nowrap text-[#3a3a3a] text-[16px] max-lg:text-[14px] font-semibold'>Our Expertise</h3>
+                        <h3 className='uppercase whitespace-nowrap text-[#3a3a3a] text-[16px] max-lg:text-[14px] font-semibold'>Our Expertise</h3>
                     </motion.div>
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
@@ -85,7 +86,7 @@ const PropertiesExpertise = () => {
                 </div>
 
                 {/* Video Section */}
-                <motion.div
+                {/* <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true, margin: '-50px' }}
@@ -100,6 +101,18 @@ const PropertiesExpertise = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
                         />
+                    </div>
+                </motion.div> */}
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true, margin: '-50px' }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    className="col-span-6 max-lg:col-span-full"
+                >
+                    <div className='relative rounded-[20px] overflow-hidden shadow-2xl'>
+                        <Image src="/assets/images/interior.png" alt="DAMAC Properties Interior Showcase" width={1000}
+                            height={800} />
                     </div>
                 </motion.div>
 
@@ -120,7 +133,7 @@ const PropertiesExpertise = () => {
                                 className='bg-white rounded-[20px] p-6 max-lg:p-4 shadow-lg flex flex-col gap-3'
                             >
                                 <div className='flex items-center gap-3'>
-                                    <div className='bg-[#d9baa0] text-[#160A0A] p-3 max-lg:p-2 rounded-full'>
+                                    <div className='bg-[#937258] text-[#ffffff] p-3 max-lg:p-2 rounded-full'>
                                         {point.icon}
                                     </div>
                                 </div>
